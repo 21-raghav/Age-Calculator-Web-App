@@ -1,8 +1,10 @@
 # Age calculator app
+___
 
 A Web Application where the user can view their age upon filling a form.
 
-## Welcome! 👋
+## Welcome!
+___
 
 A simple web application where the user can check their age based on entering the correct data into input fields.
 
@@ -21,6 +23,7 @@ The user is able to:
 
 
 ## Building the project
+___
 
 - The project is built using: HTML5, CSS3, Javascript ES6.
 - The form has client-side validations to avoid entering invalid data.
