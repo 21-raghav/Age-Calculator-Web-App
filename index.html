@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap"
+      rel="stylesheet"
+    />
+    <title>Frontend Mentor | Age calculator app</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <form>
+        <div class="form-controls-wrapper">
+          <label for="day">Day</label>
+          <input id="date" type="number" name="date" placeholder="DD" min="01" max="31" autofocus required/>
+          <span></span>
+        </div>
+        <div class="form-controls-wrapper">
+          <label for="month">Month</label>
+          <input id="month" type="number" name="month" placeholder="MM" min="01" max="12" required/>
+          <span></span>
+        </div>
+        <div class="form-controls-wrapper">
+          <label for="year">Year</label>
+          <input id="year" type="number" name="year" placeholder="YYYY" min="1001" max="2023" required/>
+          <span></span>
+        </div>
+        <div class="form-button-wrapper">
+          <hr>
+          <button type="button"></button>
+        </div>
+      </form>
+      <section>
+        <h2><output id="disp-years">--</output> years</h2>
+        <h2><output id="disp-months">--</output> months</h2>
+        <h2><output id="disp-days">--</output> days</h2>
+      </section>
+    </main>
+  </body>
+</html>
