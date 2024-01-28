@@ -1,0 +1,102 @@
+@use '../base/variables';
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: Poppins, sans-serif;
+    background-color: variables.$Off-white;
+    main {
+        flex: 0 1 500px;
+        padding: 1.7rem 1.5rem;
+        margin: 0 1.5rem;
+        border-radius: 20px 20px 200px;
+        background-color: variables.$White; 
+        form {
+            display: flex;
+            flex-flow: row wrap;
+            .form-controls-wrapper {
+                flex: 0 0 22%;
+                margin-right: 1.5rem; 
+                label {
+                    color: variables.$Smokey-grey;
+                    font-size: .8rem;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    letter-spacing: .3ch;
+                }
+                input {
+                    width: 100%;
+                    padding: .7rem;
+                    font-size: 1.2rem;
+                    font-weight: 700;
+                    border-radius: 5px;
+                } 
+                input:focus { 
+                    outline-style: none;
+	                box-shadow: none;
+                    border: 2px solid variables.$Purple; 
+                }
+            } 
+            .empty {
+                label { color: variables.$Light-red; }
+                input { border: 2px solid variables.$Light-red;}
+                input + span::after {
+                    content: "This field is required";
+                    color: variables.$Light-red;
+                    font-size: .5rem;
+                    font-weight: 400;
+                    font-style: italic;
+                }
+            }
+            .invalid {
+                label { color: variables.$Light-red; }
+                input { border: 2px solid variables.$Light-red;}
+                input + span::after {
+                    content: "Must be a valid number";
+                    color: variables.$Light-red;
+                    font-size: .5rem;
+                    font-weight: 400;
+                    font-style: italic;
+                }
+            }
+            .form-button-wrapper {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                hr {
+                    flex: 1 1 100%;
+                    margin: 2rem 0;
+                    border-top: .1rem solid variables.$Light-grey;
+                }
+                button {
+                    width: 50px;
+                    height: 50px;
+                    padding: .6rem;
+                    border: none;
+                    border-radius: 50%;
+                    background-image: url(assets/images/icon-arrow.svg);
+                    background-size: contain;
+                    background-origin: content-box;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-color: variables.$Purple;
+                }
+                button:hover {
+                    background-color: variables.$Off-black;
+                    cursor: pointer;
+                }
+            }    
+        }
+        section {
+            h2 {
+                font-size: 3rem;
+                font-weight: 800;
+                font-style: italic;
+                output { color: variables.$Purple; }
+            }
+        } 
+    }
+}
