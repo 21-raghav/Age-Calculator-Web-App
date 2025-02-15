@@ -38,8 +38,8 @@ function clickHandler() {
         output.innerHTML = "--";
       }
     } else if (
-      div.children[1].value < div.children[1].min ||
-      div.children[1].value > div.children[1].max
+      +div.children[1].value < +div.children[1].min ||
+      +div.children[1].value > +div.children[1].max
     ) {
       div.classList.add("invalid");
       isValid = false;
